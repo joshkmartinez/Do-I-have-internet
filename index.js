@@ -10,7 +10,9 @@ const responses = [
   'Error reaching internet. Try Again.',
   'Are you on the moon?',
   'No, why?',
-  "Of course not."
+  'Of course not.',
+  'I think so?',
+  'Probably not.'
 ]
 app.get('/ping', (req, res, next) => {
   res.send('pong')
@@ -18,7 +20,7 @@ app.get('/ping', (req, res, next) => {
 
 app.get('/help', (req, res, next) => {
   res.send(
-    'This very useful service tells you wether you have internet, or not.'
+    'This very useful service tells you wether you have internet, or if you dont.'
   )
 })
 
